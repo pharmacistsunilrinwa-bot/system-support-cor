@@ -36,8 +36,9 @@ version = 0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-# comma separated e.g. requirements = python3,kivy,requests,urllib3,openssl
-requirements = python3,kivy,requests,urllib3,openssl
+# CRITICAL FIX: Removed openssl (causes libffi cross-compile failures with NDK r25b)
+# Kept: python3, kivy, requests, urllib3
+requirements = python3,kivy,requests,urllib3
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -417,7 +418,7 @@ warn_on_root = 1
 #    List as sections
 #
 #    You can define all the "list" as [section:key].
-#    Each line will be considered as a option to the list.
+#    Each line will be considered as an option to the list.
 #    Let's take [app] / source.exclude_patterns.
 #    Instead of doing:
 #
