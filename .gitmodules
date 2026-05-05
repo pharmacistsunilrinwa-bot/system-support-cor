@@ -1,0 +1,5 @@
+# Placeholder .gitmodules - core_logic submodule disabled
+# Uncomment and configure when submodule repository is available
+# [submodule "core_logic"]
+#     path = core_logic
+#     url = <REPLACE_WITH_REPO_URL>
